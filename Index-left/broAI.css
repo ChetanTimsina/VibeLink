@@ -1,0 +1,23 @@
+#Question-Asking-area {
+  position: fixed;
+  width: 100%;
+  bottom: 3vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#inputText {
+  width: 20vw;
+  height: 4vw;
+}
+#inputText::placeholder {
+  font-size: 1.3vw;
+}
+#submit {
+  height: 4.5vw;
+  width: 4.5vw;
+}
+#submit img {
+  width: 2vw;
+  height: 2vw;
+}

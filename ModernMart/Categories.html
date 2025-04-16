@@ -1,0 +1,1294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Categories</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- css & bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="categoryStyle.css">
+    <link rel="icon" type="image/png" href="Images/MartLogo.png" />
+  </head>
+  <body style="background-color: #e2fced;">
+    <header>
+        <nav style="background-color: #b8f9d3;">
+          <a href="index.html">
+            <div id="logo-container">
+                <img id="logo" src="Images/MartLogo.png" alt="MartLogo" />
+                <section>
+                  <h1 style="font-size: 2.5vw">ModernMart</h1>
+                  <p>Explore Your Interest</p>
+                </section>
+              </div>
+          </a>
+          <form
+            action="http://www.google.com/search"
+            method="get"
+            target="_blank"
+            id="search-form"
+          >
+            <input
+              type="search"
+              placeholder="Search for Products and Brands"
+              name="q"
+              class="search"
+              style="border-top-left-radius: 20px;
+              border-bottom-left-radius: 20px;"
+            />
+            <button class="search" style="border-top-right-radius: 20px;
+              border-bottom-right-radius: 20px;">
+              <img
+                style="width: 3.5vw; height: 3.5vw;border-top-right-radius: 20px;
+              border-bottom-right-radius: 20px;"
+                src="Images/search.gif"
+                alt=""
+              />
+            </button>
+          </form>
+          <ul class="nav_ul">
+            <li style="background-color: rgba(74, 248, 248, 0.5);">
+              <a href="index.html">Home</a>
+            </li>
+            <li id="Products">
+              <a href="Products.html">Products</a>
+              <div class="nav-dropdown Products-drop">
+                <div class="nav-image-container">
+                  <img id="nav-image" src="Images/Product.svg" alt="" />
+                  <h2 style="font-size: 1.6rem;">Products</h2>
+                  <p style="font-size: 1rem;">Discover a wide range of quality products.</p>
+                </div>
+                <div>
+                  <section>
+                    <h6>Trending Now</h6>
+                    <ul>
+                      <li>Best Sellers</li>
+                      <li>New Arrivals</li>
+                      <li>Limited Edition</li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h6>Tech & Gadgets</h6>
+                    <ul>
+                      <li>Gaming Accessories</li>
+                      <li>Wearable Tech</li>
+                      <li>Smart Home Devices</li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h6>Home & Kitchen</h6>
+                    <ul>
+                      <li>Furniture</li>
+                      <li>Appliances</li>
+                      <li>Decor</li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </li>
+            <li id="Carts">
+              <a href="Carts.html">Carts</a>
+              <div class="nav-dropdown Carts-drop">
+                <div class="nav-image-container">
+                  <img id="nav-image" src="Images/Carts.svg" alt="" />
+                  <h2 style="font-size: 1.6rem;">Carts</h2>
+                  <p style="font-size: 1rem;">Perfect place to decide to buy</p>
+                </div>
+                <div>
+                  <section>
+                    <h6>Occasions</h6>
+                    <ul>
+                      <li>Birthdays</li>
+                      <li>Anniversaries</li>
+                      <li>Holidays</li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h6> Brands</h6>
+                    <ul>
+                      <li>Amazon</li>
+                      <li>Apple</li>
+                      <li>Google Play</li>
+                    </ul>
+                  </section>
+                  <section>
+                    <h6>Customizable
+                      </h6>
+                    <ul>
+                      <li>Personalized Messages</li>
+                      <li>Choose Your Amount</li>
+                      <li>Instant Delivery</li>
+                    </ul>
+                  </section>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="btn-container">
+            <img src="Images/sun.svg" alt="" />
+            <label class="switch btn-color-mode-switch">
+              <input
+                value="1"
+                id="color_mode"
+                name="color_mode"
+                type="checkbox"
+              />
+              <label
+                class="btn-color-mode-switch-inner"
+                data-off="Light"
+                data-on="Dark"
+                for="color_mode"
+              ></label>
+            </label>
+            <img src="Images/moon.svg" alt="" />
+            </div>
+          </li>
+          </div>
+          <button id="Login">
+            <img
+              src="Images/login.png"
+              alt=""
+              style="width: 2.5vw; height: 2.5vw"
+            />
+            <big>Login</big>
+          </button>
+        </nav>
+      </header>
+      <main>
+        <div id="helper-container" class="color-darker">
+          <h1>What are you shopping for today</h1>
+          <div id="helper">
+            <section>
+              <div id="women" class="cateImage"></div>
+              <a href="#women-link"><h2>Women</h2></a>
+            </section>
+            <section>
+              <div id="men" class="cateImage"></div>
+              <a href="#men-link"><h2>Men</h2></a>
+            </section>
+            <section>
+              <div id="kid" class="cateImage"></div>
+              <a href="#kid-link"><h2>Kids</h2></a>
+            </section>
+            <section>
+              <div id="shoe" class="cateImage"></div>
+              <a href="#shoe-link"><h2>Shoes</h2></a>
+            </section>
+            <section>
+              <div id="jewelry" class="cateImage"></div>
+              <a href="#jewelry-link"><h2>jewelry</h2></a>
+            </section>
+            <section>
+              <div id="beauty" class="cateImage"></div>
+              <a href="#beauty-link"><h2>Beauty</h2></a>
+            </section>
+            <section>
+              <div id="decor" class="cateImage"></div>
+              <a href="#decor-link"><h2>Decor</h2></a>
+            </section>
+            <section>
+              <div id="home" class="cateImage"></div>
+              <a href="#home-link"><h2>Home</h2></a>
+            </section>
+          </div>
+        </div>
+        <div id="main-container">
+          <div id="women-container">
+            <h2 id="women-link" style="text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;">Women</h2>
+            <div id="category-section">
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/women1.jpg);">
+                  </div>
+                  <div id="card-text">
+                    <h6>Elegant Evening Gown</h6>
+                    <p>
+                      Material: Premium Satin Fabric <br>
+                      Design: Sleeveless with Floral Embroidery <br>
+                      Length: Floor-Length <br>
+                      Price: $129
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This elegant evening gown features premium satin fabric with floral embroidery, a sleeveless design, and a flattering silhouette, perfect for formal events and special occasions.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container">
+                    <div class="Rec-Image-container" style="background-image: url(Images/women2.jpg);">
+                    </div>
+                  </div>
+                  <div id="card-text">
+                    <h6>Chic Summer Dress</h6>
+                    <p>
+                      Material: Lightweight Cotton Blend <br>
+                      Design: Floral Print with Ruffled Sleeves <br>
+                      Length: Knee-Length <br>
+                      Price: $89
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This chic summer dress is made from a lightweight cotton blend, featuring a beautiful floral print with ruffled sleeves. Its breezy design makes it perfect for casual outings and sunny days.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/women3.jpg);">
+                  </div>
+                  <div id="card-text">
+                    <h6>Classic Red Maxi Dress</h6>
+                    <p>
+                      Material: Soft Chiffon Fabric <br>
+                      Design: Off-Shoulder with Pleated Skirt <br>
+                      Length: Full-Length <br>
+                      Price: $149
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This classic red maxi dress features a soft chiffon fabric, an elegant off-shoulder design, and a flowing pleated skirt, perfect for evening parties and special occasions.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div> 
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/women4.jpg);">
+                  </div>
+                  <div id="card-text">
+                    <h6>Stylish Denim Jacket</h6>
+                    <p>
+                      Material: Premium Washed Denim <br>
+                      Design: Button-Up with Front Pockets <br>
+                      Fit: Slim-Fit <br>
+                      Price: $99
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This stylish denim jacket is made from premium washed denim, featuring a slim-fit cut with button-up closure and front pockets, perfect for casual wear and layering.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>        
+          </div>
+          </div>
+          <div id="men-container">
+            <h2 id="men-link" style="text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;">Men</h2>
+            <div id="category-section">
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/men1.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Classic Formal Suit</h6>
+                    <p>
+                      Material: Premium Wool Blend <br>
+                      Design: Single-Breasted with Notch Lapel <br>
+                      Fit: Tailored-Fit <br>
+                      Price: $199
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This classic formal suit is crafted from a premium wool blend, featuring a single-breasted design with a notch lapel, ideal for business meetings and formal occasions.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/men2.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Casual Polo Shirt</h6>
+                    <p>
+                      Material: Soft Cotton Fabric <br>
+                      Design: Short Sleeve with Buttoned Collar <br>
+                      Fit: Regular-Fit <br>
+                      Price: $49
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This casual polo shirt is made from soft cotton fabric, featuring a buttoned collar and short sleeves, perfect for everyday wear and relaxed outings.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/men3.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Stylish Leather Jacket</h6>
+                    <p>
+                      Material: Genuine Leather <br>
+                      Design: Zip-Up with Stand Collar <br>
+                      Fit: Slim-Fit <br>
+                      Price: $249
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This stylish leather jacket is crafted from genuine leather, featuring a zip-up design with a stand collar, ideal for a rugged yet sophisticated look.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/men4.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Casual Denim Jeans</h6>
+                    <p>
+                      Material: Stretchable Denim <br>
+                      Design: Classic Five-Pocket Styling <br>
+                      Fit: Slim-Fit <br>
+                      Price: $79
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">These casual denim jeans are made from stretchable denim, featuring a slim-fit cut with classic five-pocket styling, perfect for everyday comfort and style.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>        
+            </div>
+          </div>  
+          <div id="kid-container">
+            <h2  id="kid-link" style="text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;">Kids</h2>
+            <div id="category-section">
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/kid1.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Adorable Summer Dress</h6>
+                    <p>
+                      Material: Soft Cotton Fabric <br>
+                      Design: Floral Print with Ruffled Sleeves <br>
+                      Size: Available for Ages 3-8 <br>
+                      Price: $39
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This adorable summer dress features soft cotton fabric, a cute floral print, and ruffled sleeves, making it perfect for kids' casual outings.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/kid2.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Casual Boys' T-Shirt</h6>
+                    <p>
+                      Material: 100% Cotton <br>
+                      Design: Graphic Print with Round Neck <br>
+                      Size: Available for Ages 4-10 <br>
+                      Price: $29
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This casual boys' t-shirt is made from 100% cotton, featuring a fun graphic print and a comfortable round neck, ideal for everyday wear.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/kid3.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Cozy Kids' Hoodie</h6>
+                    <p>
+                      Material: Fleece Cotton Blend <br>
+                      Design: Zip-Up with Kangaroo Pockets <br>
+                      Size: Available for Ages 5-12 <br>
+                      Price: $49
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This cozy kids' hoodie is made from a fleece cotton blend, featuring a zip-up design with kangaroo pockets, perfect for warmth and style.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/kid4.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Trendy Kids' Sneakers</h6>
+                    <p>
+                      Material: Breathable Mesh with Rubber<br>
+                      Design: Slip-On with Adjustable Straps <br>
+                      Size: Available for Ages 4-10 <br>
+                      Price: $59
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">These trendy kids' sneakers feature breathable mesh material, a comfortable rubber sole, and adjustable straps, perfect for active kids.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>        
+            </div>
+          </div>
+          <div id="shoe-container">
+            <h2  id="shoe-link" style="text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;">Shoes</h2>
+            <div id="category-section">
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/shoe1.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Elegant Leather Loafers</h6>
+                    <p>
+                      Material: Genuine Leather <br>
+                      Design: Slip-On with Cushioned Sole <br>
+                      Size: Available in US 6-12 <br>
+                      Price: $99
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">These elegant leather loafers offer a sleek slip-on design with a cushioned sole, perfect for both formal and casual wear.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/shoe2.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Sporty Running Shoes</h6>
+                    <p>
+                      Material: Breathable Mesh with Rubber<br>
+                      Design: Lace-Up with Arch Support <br>
+                      Size: Available in US 5-13 <br>
+                      Price: $79
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">These sporty running shoes feature breathable mesh material, a sturdy rubber sole, and excellent arch support for maximum comfort.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/shoe3.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Trendy Sneakers</h6>
+                    <p>
+                      Material: Canvas with Rubber Outsole <br>
+                      Design: Lace-Up with Padded Collar <br>
+                      Size: Available in US 6-12 <br>
+                      Price: $69
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">These trendy high-top sneakers offer a stylish canvas design with a comfortable padded collar, making them ideal for casual and streetwear fashion.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/shoe4.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Classic Formal Shoes</h6>
+                    <p>
+                      Material: Premium Faux Leather <br>
+                      Design: Lace-Up with Textured Finish <br>
+                      Size: Available in US 7-13 <br>
+                      Price: $89
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">These classic formal shoes feature a premium faux leather design with a textured finish, perfect for business and formal occasions.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>        
+            </div>
+          </div> 
+          <div id="jewelry-container">
+            <h2 id="jewelry-link" style="text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;">Jewelrys</h2>
+            <div id="category-section">
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/jewelry1.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Elegant Gold Necklace</h6>
+                    <p>
+                      Material: 18K Gold <br>
+                      Design: Delicate Chain with Pendant <br>
+                      Length: 18 inches <br>
+                      Price: $249
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This elegant gold necklace features an 18K gold chain with a delicate pendant, perfect for both casual and formal wear.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/jewelry2.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Diamond Stud Earrings</h6>
+                    <p>
+                      Material: 14K White Gold <br>
+                      Design: Classic Round Cut <br>
+                      Size: 0.5 Carat Each <br>
+                      Price: $399
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">These diamond stud earrings feature a timeless round-cut design set in 14K white gold, adding elegance to any outfit.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/jewelry3.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Silver Charm Bracelet</h6>
+                    <p>
+                      Material: Sterling Silver <br>
+                      Design: Adjustable Chain with Charms <br>
+                      Length: 7 inches <br>
+                      Price: $129
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This silver charm bracelet is crafted from sterling silver, featuring an adjustable chain and elegant charms, perfect for everyday wear.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/jewelry4.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Rose Gold Watch</h6>
+                    <p>
+                      Material: Stainless Steel with Rose Gold<br>
+                      Design: Minimalist Dial with Leather<br>
+                      Water Resistance: 50m <br>
+                      Price: $199
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This rose gold watch features a stainless steel case with a leather strap, offering a sleek and modern design for any occasion.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>        
+            </div>
+          </div>
+          <div id="beauty-container">
+            <h2 id="beauty-link" style="text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;">Beauty Product</h2>
+            <div id="category-section">
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/beauty1.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Hydrating Face Serum</h6>
+                    <p>
+                      Ingredients: Hyaluronic Acid, Vitamin C <br>
+                      Benefits: Deep Hydration & Brightening <br>
+                      Size: 30ml <br>
+                      Price: $49
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This hydrating face serum is enriched with hyaluronic acid and vitamin C, providing deep hydration and a radiant glow.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/beauty2.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Luxury Matte Lipstick</h6>
+                    <p>
+                      Ingredients: Shea Butter, Jojoba Oil <br>
+                      Finish: Matte, Long-Lasting <br>
+                      Shades: Available in 10 Colors <br>
+                      Price: $25
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This luxury matte lipstick is infused with shea butter and jojoba oil for a smooth, long-lasting finish in vibrant colors.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/beauty3.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Rejuvenating Cream</h6>
+                    <p>
+                      Ingredients: Retinol, Collagen <br>
+                      Benefits: Anti-Aging & Skin Repair <br>
+                      Size: 50ml <br>
+                      Price: $59
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This rejuvenating night cream with retinol and collagen helps reduce wrinkles and restore skin’s natural glow.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/beauty4.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Organic Herbal Shampoo</h6>
+                    <p>
+                      Ingredients: Aloe Vera, Argan Oil <br>
+                      Benefits: Strengthens & Nourishes Hair <br>
+                      Size: 250ml <br>
+                      Price: $35
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This organic herbal shampoo with aloe vera and argan oil nourishes the scalp and strengthens hair from the roots.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>        
+            </div>
+          </div>
+          <div id="decor-container">
+            <h2 id="decor-link" style="text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;">Decorations</h2>
+            <div id="category-section">
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/decor1.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Elegant Wall Clock</h6>
+                    <p>
+                      Material: Premium Wood & Metal <br>
+                      Design: Vintage Roman Numerals <br>
+                      Size: 24-inch Diameter <br>
+                      Price: $79
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This elegant wall clock features a vintage design with Roman numerals, adding a classic touch to any room.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/decor2.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Luxury Table Lamp</h6>
+                    <p>
+                      Material: Ceramic Base & Fabric Shade <br>
+                      Design: Modern Minimalist <br>
+                      Height: 18 inches <br>
+                      Price: $59
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This luxury table lamp features a sleek ceramic base with a soft fabric shade, perfect for adding warmth to any space.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/decor3.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Decorative Vase Set</h6>
+                    <p>
+                      Material: Handcrafted Ceramic <br>
+                      Design: Geometric Patterns <br>
+                      Set: 3 Vases <br>
+                      Price: $45
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This decorative vase set features handcrafted ceramic with elegant geometric patterns, ideal for home decor.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/decor4.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Modern Wall Art</h6>
+                    <p>
+                      Material: Canvas & Wooden Frame <br>
+                      Design: Abstract Painting <br>
+                      Size: 36x24 inches <br>
+                      Price: $99
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This modern wall art piece showcases an abstract painting on high-quality canvas, bringing a contemporary feel to any space.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>        
+            </div>
+          </div>
+          <div id="kitchen-container">
+            <h2 id="home-link" style="text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;">Home</h2>
+            <div id="category-section">
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/kitchen1.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Stainless Cookware</h6>
+                    <p>
+                      Material: Premium Stainless Steel <br>
+                      Includes: 5 Pots & Pans with Lids <br>
+                      Features: Non-Stick & Induction<br>
+                      Price: $129
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This premium stainless steel cookware set is non-stick and induction safe, perfect for all types of cooking.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/kitchen2.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Electric Coffee Maker</h6>
+                    <p>
+                      Material: High-Quality Plastic & Metal <br>
+                      Capacity: 12 Cups <br>
+                      Features: Programmable Timer & Auto<br>
+                      Price: $79
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This electric coffee maker features a 12-cup capacity with a programmable timer for fresh coffee anytime.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/kitchen3.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Ceramic Dinnerware Set</h6>
+                    <p>
+                      Material: Handcrafted Ceramic <br>
+                      Includes: 16-Piece Set (Plates, Bowls) <br>
+                      Design: Elegant Glaze Finish <br>
+                      Price: $99
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This handcrafted ceramic dinnerware set features an elegant glaze finish, perfect for both casual and formal dining.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>
+              <div class="card">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="background-image: url(Images/kitchen4.jpg);"></div>
+                  <div id="card-text">
+                    <h6>Digital Air Fryer</h6>
+                    <p>
+                      Material: Stainless Steel & Plastic <br>
+                      Capacity: 5.8 Quarts <br>
+                      Features: Touchscreen Controls & Rapid<br>
+                      Price: $139
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                  </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This digital air fryer uses rapid air technology for healthier, crispy meals with little to no oil.</span>
+                  <button class="AddToCarts second-content-button">Add to Cart</button>
+                </div>
+              </div>        
+            </div>
+          </div>
+        <div id="recom-container">
+          <h2 id="beauty-link" style="text-align: center;font-family: Georgia, 'Times New Roman', Times, serif;">Recommend</h2>
+          <div id="category-section">
+            <div class="card">
+              <div class="first-content">
+                <div class="Rec-Image-container">
+                  <img style="top: 1vw;" src="Images/car.png" alt="BMW M4 Coupe">
+                </div>
+                <div id="card-text">
+                  <h6>BMW M4 Coupe</h6>
+                  <p>
+                    Engine: 3.0L Twin-Turbo Inline-6 <br>
+                    Horsepower: 503 HP <br>
+                    Top Speed: 250 km/h <br>
+                    Price: $74,000
+                  </p>
+                  <div class="star-rating">
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                  </div>   
+              </div>
+              </div>
+              <div class="second-content">
+                <span class="second-content-text">The BMW M4 Coupe is a high-performance sports car featuring a 3.0L twin-turbo inline-6 engine, delivering 503 HP. With a sleek design, aggressive stance, and luxurious interior</span>
+                <button class="AddToCarts second-content-button">Add to Cart</button>
+              </div>
+            </div> 
+            <div class="card">
+              <div class="first-content">
+                <div class="Rec-Image-container" style="display: flex;justify-content: center;">
+                  <img style="width:7.5vw;top: -0.3vw;" src="Images/serum.png" alt="Facial Serum">
+                </div>
+                <div id="card-text">
+                  <h6>Organic Serum</h6>
+                  <p>Key Ingredient: Jojoba <br>
+                    Skin Benefits: Deep hydration <br>
+                    Volume: 30ml (1 fl. oz) <br>
+                    Price: $25.99
+                  </p>
+                  <div class="star-rating">
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                  </div>   
+              </div>
+              </div>
+              <div class="second-content">
+                <span class="second-content-text">This organic facial serum hydrates deeply, boosts collagen, reduces fine lines, enhances skin glow, and promotes a youthful appearance.</span>
+                <button class="AddToCarts second-content-button">Add to Cart</button>
+              </div>
+            </div>
+            <div class="card">
+              <div class="first-content">
+                <div class="Rec-Image-container">
+                  <img style="width: 7vw;left: 1.9vw;" src="Images/cloth.png" alt="clothstand">
+                </div>
+                <div id="card-text">
+                  <h6>Luxury clothing rack</h6>
+                  <p>
+                    Material: Metal frame<br>
+                    Capacity:up to 20 garments <br>
+                    Design: Elegant gold arch design<br>
+                    Usage: Ideal for showrooms.
+                  </p>
+                  <div class="star-rating">
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                  </div>   
+              </div>
+              </div>
+              <div class="second-content">
+                <span class="second-content-text">This stylish gold clothing rack offers ample hanging space, perfect for organizing clothes in retail stores, boutiques, or home closets.</span>
+                <button class="AddToCarts second-content-button">Add to Cart</button>
+              </div>
+            </div> 
+            <div class="card">
+              <div class="first-content">
+                <div class="Rec-Image-container">
+                  <img style="width: 7vw;left: 1.9vw;" src="Images/watch.png" alt="Smartwatch">
+                </div class="star-rating">
+                <div id="card-text">
+                  <h6>Smartwatch</h6>
+                  <p>
+                    Display: 1.4" AMOLED <br>
+                    Battery Life: Up to 14 days <br>
+                    Features: Heart rate, GPS<br>
+                    Price: $199
+                  </p>
+                  <div class="star-rating">
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star filled">&#9733;</span>
+                    <span class="star">&#9733;</span>
+                  </div>   
+              </div>
+              </div>
+              <div class="second-content">
+                <span class="second-content-text">A sleek smartwatch with a 1.4-inch AMOLED display, heart rate monitoring, fitness tracking, notifications, long battery life, and water resistance.</span>
+                <button class="AddToCarts second-content-button">Add to Cart</button>
+              </div>
+            </div>
+        </div>
+        </div>
+      </main>
+    <footer style="background-color: #b8f9d3;">
+        <div id="cta">
+            <section id="sign">
+            <h2>Don't Miss Out</h2>
+            <br />
+            <p>Sign up for the latest beauty news, product samples and coupons</p>
+            <br />
+            <form id="footer-form" action="\journals" method="post">
+                <section>
+                <label for="Email" style="font-size: 1.3vw;">Email Address</label><br />
+                <input type="email" id="Email" />
+                </section>
+                <section>
+                <label for="birthday" style="font-size: 1.3vw;">Birthday</label><br />
+                <input type="date" id="birthday" />
+                </section>
+                <input id="sub" type="submit" value="SIGN UP" />
+            </form>
+            <br />
+            <p>
+                This site is intended for US consumers. By signing up, you
+                understand and agree that your data <br />
+                will be collected and used subject to our US Privacy Policy and
+                Terms of Use.
+            </p>
+            <br />
+            </section>
+            <section class="other-footer">
+            <h3>COMPANY</h3>
+            <h4>About</h4>
+            <h4>Experts and Spokesmodels</h4>
+            </section>
+            <section class="other-footer">
+            <h3>CUSTOMER SERVICE</h3>
+            <h4>Contact Us</h4>
+            <h4>My Account</h4>
+            <h4>Store Locator</h4>
+            <h4>Redeem Rewards</h4>
+            </section>
+            <section class="other-footer">
+            <h3>MORE TO EXPLORE</h3>
+            <h4>Beauty Magazine</h4>
+            <h4>Tools and Consultations</h4>
+            <h4>Offers</h4>
+            <h4>L'Oréal Paris</h4>
+            </section>
+            <section id="cta-link">
+            <ul class="bottom_ul">
+                <li>
+                <a
+                    href="https://www.facebook.com/profile.php?id=100089239116629"
+                    target="_blank"
+                    ><img
+                    class="svg"
+                    src="Images/logo-facebook.svg"
+                    alt="logo-facebook"
+                /></a>
+                </li>
+                <li>
+                <a
+                    href="https://www.instagram.com/chetan.timsina/"
+                    target="_blank"
+                    ><img
+                    class="svg"
+                    src="Images/logo-instagram.svg"
+                    alt="logo-instagram"
+                /></a>
+                </li>
+                <li>
+                <a href="https://github.com/User01944" target="_blank"
+                    ><img
+                    class="svg"
+                    src="Images/logo-github.svg"
+                    alt="logo-github"
+                /></a>
+                </li>
+                <li>
+                <a href="https://www.youtube.com/@CodeInFocus" target="_blank"
+                    ><img
+                    class="svg"
+                    src="Images/logo-youtube (1).svg"
+                    alt="logo-youtube"
+                /></a>
+                </li>
+                <li>
+                <a href="https://www.linkedin.com/" target="_blank"
+                    ><img
+                    class="svg"
+                    src="Images/logo-linkedin.svg"
+                    alt="logo-linkedin"
+                /></a>
+                </li>
+                <li>
+                <a href="mailto: chetantimsina01944@gmail.com"
+                    ><img
+                    class="svg"
+                    src="Images/mail-unread-outline.svg"
+                    alt="mail-unread-outline"
+                /></a>
+                </li>
+            </ul>
+            </section>
+        </div>
+        </footer>
+        <a style="color: black" href="#helper-container">
+        <div id="up" style="z-index: 30;">
+            <img
+            src="Images/chevron-up-outline.svg"
+            alt=""
+            width="60%"
+            style="padding-top: 8px"
+            /></div
+        ></a>
+        <script src="script.js"></script>
+    </body>
+</html>

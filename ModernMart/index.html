@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ModernMart</title>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- css & bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="Images/MartLogo.png" />
+  </head>
+  <body class="color-lighter">
+    <header>
+      <nav class="color-darker">
+        <a href="index.html">
+          <div id="logo-container">
+            <img id="logo" src="Images/MartLogo.png" alt="MartLogo" />
+            <section>
+              <h1 id="first" style="font-size: 2.5vw">ModernMart</h1>
+              <p>Explore Your Interest</p>
+            </section>
+          </div>
+        </a>
+        <form
+          action="http://www.google.com/search"
+          method="get"
+          target="_blank"
+          id="search-form"
+        >
+          <input
+            type="search"
+            placeholder="Search for Products and Brands"
+            name="q"
+            id="search-bar"
+            class="search color-lighter"
+            style="border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;"
+          />
+          <button id="search-image" class="search" style="border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;">
+            <img
+              style="width: 3.5vw; height: 3.5vw;border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;"
+              src="Images/search.gif"
+              alt=""
+            />
+          </button>
+        </form>
+        <ul class="nav_ul">
+          <li id="Categories">
+            <a href="Categories.html">Categories</a>
+            <div class="nav-dropdown Category-drop">
+              <div class="nav-image-container">
+                <img id="nav-image" src="Images/Category.svg" alt="" />
+                <h2 style="font-size: 1.6rem;">Categries</h2>
+                <p style="font-size: 1rem;">Explore various types</p>
+              </div>
+              <div>
+                <section>
+                  <h6>Electronics</h6>
+                  <ul class="nav-ul">
+                    <li>Mobiles</li>
+                    <li>Laptops</li>
+                    <li>Headphones</li>
+                  </ul>
+                </section>
+                <section>
+                  <h6>Fashion</h6>
+                  <ul class="nav-ul">
+                    <li>Men’s Clothing</li>
+                    <li>Women’s Clothing</li>
+                    <li>Shoes</li>
+                  </ul>
+                </section>
+                <section>
+                  <h6>Home & Kitchen</h6>
+                  <ul class="nav-ul">
+                    <li>Furniture</li>
+                    <li>Appliances</li>
+                    <li>Decor</li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </li>
+          <li id="Products">
+            <a href="Products.html">Products</a>
+            <div class="nav-dropdown Products-drop">
+              <div class="nav-image-container">
+                <img id="nav-image" src="Images/Product.svg" alt="" />
+                <h2 style="font-size: 1.6rem;">Products</h2>
+                <p style="font-size: 1rem;">Discover a wide range of quality products.</p>
+              </div>
+              <div>
+                <section>
+                  <h6>Trending Now</h6>
+                  <ul class="nav-ul">
+                    <li>Best Sellers</li>
+                    <li>New Arrivals</li>
+                    <li>Limited Edition</li>
+                  </ul>
+                </section>
+                <section>
+                  <h6>Tech & Gadgets</h6>
+                  <ul class="nav-ul">
+                    <li>Gaming Accessories</li>
+                    <li>Wearable Tech</li>
+                    <li>Smart Home Devices</li>
+                  </ul>
+                </section>
+                <section>
+                  <h6>Home & Kitchen</h6>
+                  <ul class="nav-ul">
+                    <li>Furniture</li>
+                    <li>Appliances</li>
+                    <li>Decor</li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </li>
+          <li id="Carts">
+            <a href="Carts.html">Carts</a>
+            <div class="nav-dropdown Carts-drop">
+              <div class="nav-image-container">
+                <img id="nav-image" src="Images/Carts.svg" alt="" />
+                <h2 style="font-size: 1.6rem;">Carts</h2>
+                <p style="font-size: 1rem;">Perfect place to decide to buy</p>
+              </div>
+              <div>
+                <section>
+                  <h6>Occasions</h6>
+                  <ul class="nav-ul">
+                    <li>Birthdays</li>
+                    <li>Anniversaries</li>
+                    <li>Holidays</li>
+                  </ul>
+                </section>
+                <section>
+                  <h6> Brands</h6>
+                  <ul class="nav-ul">
+                    <li>Amazon</li>
+                    <li>Apple</li>
+                    <li>Google Play</li>
+                  </ul>
+                </section>
+                <section>
+                  <h6>Customizable
+                    </h6>
+                  <ul class="nav-ul">
+                    <li>Personalized Messages</li>
+                    <li>Choose Your Amount</li>
+                    <li>Instant Delivery</li>
+                  </ul>
+                </section>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <div class="btn-container">
+          <img src="Images/sun.svg" alt="" />
+          <label class="switch btn-color-mode-switch">
+            <input
+              value="1"
+              id="color_mode"
+              name="color_mode"
+              type="checkbox"
+            />
+            <label
+              class="btn-color-mode-switch-inner"
+              data-off="Light"
+              data-on="Dark"
+              for="color_mode"
+            ></label>
+          </label>
+          <img src="Images/moon.svg" alt="" />
+          </div>
+        </li>
+        </div>
+        <button id="Login" class="color-lighter">
+          <img
+            src="Images/login.png"
+            alt=""
+            style="width: 2.5vw; height: 2.5vw"
+          />
+          <big>Login</big>
+        </button>
+      </nav>
+    </header>
+    <main>
+
+      <!---------------------------------- Hero Section ---------------------------------------->
+
+       <div id="upperSection">
+        <section id="carousel">  <!-- 1 -->
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="Images/carousel1.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Images/carousel2.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="Images/carousel3.jpg" alt="Third slide">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </section>
+
+         <!------------------------------ Feature Section -------------------------------------->
+
+          <section id="feature-text"><img style="margin-right: 1rem;" src="Images/feature.png" alt="">FEATURED PRODUCTS </section> <!-- text -->
+         <div id="feature1" class="features color-darker">
+          <img id="feature-image1" src="Images/feature1.svg" alt="" class="color-lighter">
+          <p class="feature-text-inner">Exciting Discounts <b> Up to 70%! </b>Grab your favorite styles at unbeatable prices.</p>
+         </div> <!-- 2 -->
+
+         <div id="feature2" class="features color-darker">
+          <img id="feature-image2" src="Images/feature2.svg" alt="" class="color-lighter">
+          <p class="feature-text-inner">Endless Choices Await! Find the perfect outfit with a wide range of styles and sizes.</p>
+         </div> <!-- 3 -->
+
+         <div id="feature3" class="features color-darker">
+          <img id="feature-image3" src="Images/feature3.svg" alt="" class="color-lighter">
+          <p class="feature-text-inner">Stay ahead of the fashion curve with our <b>latest arrivals</b>, featuring exclusive designs</p>
+         </div> <!-- 4 -->
+         <div id="info" class="color-darker">
+          <div id="Mart-info" class="color-darker">
+            <img src="Images/MartLogo.png" width="30px" height="30px">
+            <h6>ModernMart</h6>
+          </div>
+          <p id="info-text">Your Ultimate Shopping Destination</p>
+         </div> <!-- 5 -->
+         <div id="stats" class="color-darker">
+           <div id="stats-upper" class="color-lighter">
+            <p class="stats-text"><b>Customer & Sales Stats</b></p> 
+           <img style="margin-top: -1vw;" src="Images/charts.png" alt="">
+           <p style="font-size: 0.6vw;margin-bottom:0"><b>75% Customers Return</b></p>
+           </div>
+           <div id="stats-lower" class="color-lighter">
+            <p class="stats-text"><b> Trending Products</b></p> 
+           <img style="margin-top: -1vw;" src="Images/graph.png" alt="">
+           <p style="font-size: 0.6vw;margin-bottom:0"><b>Top 10 Bestsellers This Month</b></p>
+           </div>
+         </div> <!-- 6 -->
+         <section id="mainRight" class="color-darker">
+          <div id="recommendation">
+            <section id="recommendation-text">
+              <img style="width: 5vw;margin-right: 1rem;" src="Images/recommendation.png" alt="">RECOMMENDATIONS
+            </section>
+          </div>
+          <div id="recommend-container">
+            <section id="card-1">  
+              <div class="card color-lighter">
+                <div class="first-content">
+                  <div class="Rec-Image-container">
+                    <img style="top: 1vw;" src="Images/car.png" alt="BMW M4 Coupe">
+                  </div>
+                  <div id="card-text">
+                    <h6>BMW M4 Coupe</h6>
+                    <p>
+                      Engine: 3.0L Twin-Turbo Inline-6 <br>
+                      Horsepower: 503 HP <br>
+                      Top Speed: 250 km/h <br>
+                      Price: $74,000
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">The BMW M4 Coupe is a high-performance sports car featuring a 3.0L twin-turbo inline-6 engine, delivering 503 HP. With a sleek design, aggressive stance, and luxurious interior</span>
+                </div>
+              </div>
+            </section>
+            <section id="card-2">  
+              <div class="card color-lighter">
+                <div class="first-content">
+                  <div class="Rec-Image-container" style="display: flex;justify-content: center;">
+                    <img style="width:7.5vw;top: -0.3vw;" src="Images/serum.png" alt="Facial Serum">
+                  </div>
+                  <div id="card-text">
+                    <h6>Organic Serum</h6>
+                    <p>Key Ingredient: Jojoba <br>
+                      Skin Benefits: Deep hydration <br>
+                      Volume: 30ml (1 fl. oz) <br>
+                      Price: $25.99
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This organic facial serum hydrates deeply, boosts collagen, reduces fine lines, enhances skin glow, and promotes a youthful appearance.</span>
+                </div>
+              </div>
+            </section>
+            <section id="card-3">  
+              <div class="card color-lighter">
+                <div class="first-content">
+                  <div class="Rec-Image-container">
+                    <img style="width: 7vw;left: 1.9vw;" src="Images/cloth.png" alt="clothstand">
+                  </div>
+                  <div id="card-text">
+                    <h6>Luxury clothing rack</h6>
+                    <p>
+                      Material: Metal frame<br>
+                      Capacity:up to 20 garments <br>
+                      Design: Elegant gold arch design<br>
+                      Usage: Ideal for showrooms.
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">This stylish gold clothing rack offers ample hanging space, perfect for organizing clothes in retail stores, boutiques, or home closets.</span>
+                </div>
+              </div>
+            </section>            
+            <section id="card-4">  
+              <div class="card color-lighter">
+                <div class="first-content">
+                  <div class="Rec-Image-container">
+                    <img style="width: 7vw;left: 1.9vw;" src="Images/watch.png" alt="Smartwatch">
+                  </div class="star-rating">
+                  <div id="card-text">
+                    <h6>Smartwatch</h6>
+                    <p>
+                      Display: 1.4" AMOLED <br>
+                      Battery Life: Up to 14 days <br>
+                      Features: Heart rate, GPS<br>
+                      Price: $199
+                    </p>
+                    <div class="star-rating">
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star filled">&#9733;</span>
+                      <span class="star">&#9733;</span>
+                    </div>   
+                </div>
+                </div>
+                <div class="second-content">
+                  <span class="second-content-text">A sleek smartwatch with a 1.4-inch AMOLED display, heart rate monitoring, fitness tracking, notifications, long battery life, and water resistance.</span>
+                </div>
+              </div>
+            </section>
+          </div>
+         </section> <!-- 7 -->
+       </div>
+    </main>
+    <hr style="width: 95%;margin: auto;">
+
+    <!--------------------------------- CTA section --------------------------------------->
+    
+    <div id="second-main" class="color-darker">
+      <section id="left-cta">
+        <h3>All Ecommerce Hub</h3>
+        <h1>Shop Smart, Live Stylish: ModernMart Has It All!</h1>
+        <p>ModernMart—your ultimate destination for smart shopping. Discover top-quality products, from stylish fashion to cutting-edge gadgets, all in one place. Experience convenience, innovation, and unbeatable prices. Shop with confidence, elevate your lifestyle, and stay ahead with the latest trends. Modern shopping, redefined for you!</p>
+        <div>
+          <button class="cta-button" id="cta-button1">
+            Get a demo
+          </button>
+          <button class="cta-button" id="cta-button2">
+            Get started free
+          </button>
+          <p>Get a demo of our premium software, or get started with free tools</p>
+        </div>
+      </section>
+      <section id="right-cta">
+        <div id="week" class="color-lighter">
+          <h5>Your Weekly Activity</h5>
+          <div id="hr"></div>
+          <div id="cta-stats">
+            <section>
+              <h6>Emails</h6>
+              <h1><span class="counts" data-count="17">0</span></h1>
+              <h6>&#9650 4</h6>
+            </section>
+            <section>
+              <h6>Calls</h6>
+              <h1><span class="counts" data-count="25">0</span></h1>
+              <h6>&#9650 7</h6>
+            </section>
+            <section>
+              <h6>Meetings</h6>
+              <h1><span class="counts" data-count="15">0</span></h1>
+              <h6>&#9650 2</h6>
+            </section>
+          </div>
+        </div>
+        <div id="service" class="color-lighter">
+          <div>
+            <h5>Services Breakdown</h5>
+          <ul>
+            <li>E-Commerce</li>
+            <li>Marketing</li>
+            <li>Development</li>
+            <li>Advertising</li>
+            <li>Branding</li>
+            <li>SEO</li>
+          </ul>
+          </div>
+          <div>
+            <img src="Images/piechart.png"alt="">
+          </div>
+        </div>
+        <div id="shine">
+        </div>
+      </section>
+    </div>
+    <footer class="color-darker">
+      <div id="cta">
+        <section id="sign">
+          <h2>Don't Miss Out</h2>
+          <br />
+          <p>Sign up for the latest beauty news, product samples and coupons</p>
+          <br />
+          <form id="footer-form" action="\journals" method="post">
+            <section>
+              <label for="Email" style="font-size: 1.3vw;">Email Address</label><br />
+              <input type="email" id="Email" />
+            </section>
+            <section>
+              <label for="birthday" style="font-size: 1.3vw;">Birthday</label><br />
+              <input type="date" id="birthday" />
+            </section>
+            <input id="sub" type="submit" value="SIGN UP" />
+          </form>
+          <br />
+          <p>
+            This site is intended for US consumers. By signing up, you
+            understand and agree that your data <br />
+            will be collected and used subject to our US Privacy Policy and
+            Terms of Use.
+          </p>
+          <br />
+        </section>
+        <section class="other-footer">
+          <h3>COMPANY</h3>
+          <h4>About</h4>
+          <h4>Experts and Spokesmodels</h4>
+        </section>
+        <section class="other-footer">
+          <h3>CUSTOMER SERVICE</h3>
+          <h4>Contact Us</h4>
+          <h4>My Account</h4>
+          <h4>Store Locator</h4>
+          <h4>Redeem Rewards</h4>
+        </section>
+        <section class="other-footer">
+          <h3>MORE TO EXPLORE</h3>
+          <h4>Beauty Magazine</h4>
+          <h4>Tools and Consultations</h4>
+          <h4>Offers</h4>
+          <h4>L'Oréal Paris</h4>
+        </section>
+        <section id="cta-link">
+          <ul class="bottom_ul">
+            <li>
+              <a
+                href="https://www.facebook.com/profile.php?id=100089239116629"
+                target="_blank"
+                ><img
+                  class="svg"
+                  src="Images/logo-facebook.svg"
+                  alt="logo-facebook"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/chetan.timsina/"
+                target="_blank"
+                ><img
+                  class="svg"
+                  src="Images/logo-instagram.svg"
+                  alt="logo-instagram"
+              /></a>
+            </li>
+            <li>
+              <a href="https://github.com/User01944" target="_blank"
+                ><img
+                  class="svg"
+                  src="Images/logo-github.svg"
+                  alt="logo-github"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.youtube.com/@CodeInFocus" target="_blank"
+                ><img
+                  class="svg"
+                  src="Images/logo-youtube (1).svg"
+                  alt="logo-youtube"
+              /></a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/" target="_blank"
+                ><img
+                  class="svg"
+                  src="Images/logo-linkedin.svg"
+                  alt="logo-linkedin"
+              /></a>
+            </li>
+            <li>
+              <a href="mailto: chetantimsina01944@gmail.com"
+                ><img
+                  class="svg"
+                  src="Images/mail-unread-outline.svg"
+                  alt="mail-unread-outline"
+              /></a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </footer>
+    <a href="#upperSection">
+      <div id="up">
+        <img
+          src="Images/chevron-up-outline.svg"
+          alt=""
+          width="60%"
+          style="padding-top: 8px"
+        /></div
+    ></a>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
