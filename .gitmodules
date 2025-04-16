@@ -1,0 +1,3 @@
+[submodule "VibeLink"]
+	path = VibeLink
+	url = https://github.com/ChetanTimsina/VibeLink.git
