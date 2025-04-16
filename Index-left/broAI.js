@@ -1,4 +1,4 @@
-const HF_API_KEY = "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";
+// const HF_API_KEY = "";
 
 const text_area = document.querySelector("#Text-area");
 const inputText = document.querySelector("#inputText");
